@@ -55,16 +55,51 @@ const Link = styled.a`
   color: inherit;
 `;
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article`
+  flex-grow:1;
+  @media (max-width: 899px){
+    max-width:100%;
+  }
+  @media(min-width:900px){
+    max-width:400px;
+  }
+  @media(min-width:950px){
+    max-width:425px;
+  }
+  @media(min-width:1000px){
+    max-width:450px
+  }
+  @media(min-width:1050px){
+    max-width:475px;
+  }
+  @media(min-width:1100px){
+    max-width:500px;
+  }
+  @media(min-width:1150px){
+    max-width:575px;
+  }
+  @media(min-width:1200px) {
+    max-width:400px;
+  }
+  @media(min-width:1500px){
+    max-width:375px;
+  }
+  margin-bottom:8px;
+`;
 
 const ImageWrapper = styled.div`
   position: relative;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width:100%;
+`;
 
 const Row = styled.div`
   font-size: 1rem;
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:4px;
 `;
 
 const Name = styled.h3`
